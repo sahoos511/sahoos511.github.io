@@ -264,3 +264,40 @@ li {
     white-space: nowrap;
     z-index: 1;
 }
+
+nav {
+    text-align: center; /* Center align the navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    position: relative; /* Add position relative to the nav link */
+    margin: 0 10px; /* Add spacing between navigation links */
+    display: inline-block; /* Make the navigation links inline-block to allow for centering */
+    transition: color 0.3s, background-color 0.3s; /* Add transition effect */
+}
+
+.nav-link.active {
+    color: blue; /* Change text color to blue */
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust as needed to position the line properly */
+    left: 0;
+    width: 100%; /* Set width to 100% to cover the entire width of the link */
+    height: 2px; /* Adjust as needed for the thickness of the line */
+    background-color: blue; /* Change the color as needed */
+    z-index: -1; /* Ensure the line is behind the text */
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
