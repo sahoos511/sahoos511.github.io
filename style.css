@@ -1,0 +1,266 @@
+.container {
+    display: flex;
+}
+
+.left-section {
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    background-color: #f2f2f2;
+
+}
+
+.profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.right-section {
+    margin-left: 20%;
+    padding: 40px;
+    margin-right: 5%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Added to make links take full width */
+    padding: 10px 0; /* Added padding to links */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.education-section {
+    background-color: rgb(248, 246, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(245, 239, 239, 0.877);
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: rgb(248, 246, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(245, 239, 239, 0.877);
+    margin-bottom: 20px;
+}
+
+
+.skills-section {
+    background-color: rgb(248, 246, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(245, 239, 239, 0.877);
+    margin-bottom: 20px;
+}
+.summary-section {
+    background-color: rgb(248, 246, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(245, 239, 239, 0.877);
+    margin-bottom: 20px;
+}
+
+
+
+.experience-heading {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.experience-section {
+    background-color: rgb(248, 246, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(245, 239, 239, 0.877);
+    margin-bottom: 20px;
+}
+
+.experience-section h3 {
+    color: #555;
+}
+
+.experience-section h4 {
+    color: rgb(23, 22, 22);
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: block; /* Changed from inline-block to block */
+    margin-bottom: 10px;
+}
+
+nav ul li:last-child {
+    margin-bottom: 0; /* Changed from margin-right to margin-bottom */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+
+#contact {
+    clear: both; /* Clear floats to ensure proper layout below projects */
+}
+
+
+.project-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 300px; /* Adjust the max-width as needed */
+    width: 300px; /* Set a fixed width for the project containers */
+    height: 250px; /* Set a fixed height for the project containers */
+    display: inline-block; /* Display the project containers inline */
+    vertical-align: top; /* Align the containers to the top */
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 300px; /* Adjust the max-width as needed */
+    width: 300px; /* Set a fixed width for the project containers */
+    height: 500px; /* Set a fixed height for the project containers */
+    display: inline-block; /* Display the project containers inline */
+    vertical-align: top; /* Align the containers to the top */
+    margin-right: 20px;
+}
+.icon-list {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+
+
+.project-card img {
+    max-width: 100%; /* Set image width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+li {
+    list-style: none;
+}
+.skills-icons {
+    display: flex;
+    align-items: center;
+}
+
+.skills-icons i, .skills-icons span {
+    font-size: 30px;
+    margin-right: 20px; /* Adjust the right margin for spacing */
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.skills-icons i:last-child, .skills-icons span:last-child {
+    margin-right: 0; /* Remove right margin for the last icon */
+}
+
+.skills-icons i:hover, .skills-icons span:hover {
+    color: #007bff; /* Change the color on hover to a shade of blue */
+}
+
+
+/* Download Button */
+
+#btn-download {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  #btn-download i {
+    margin-right: 5px; /* Add spacing between icon and text */
+  }
+
+/* Target the social-icon element on hover state */
+.social-icon {
+    margin: 5px;
+    padding: 5px;
+    font-size: 30px;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.social-icon:hover {
+    color: #333; /* Neutral color for hover effect */
+}
+
+.social-icon:nth-child(1):hover {
+    
+    color: #db4437; /* Red color for LinkedIn */
+}
+
+.social-icon:nth-child(2):hover {
+    color: blue
+   
+}
+
+.skills-icons {
+    display: flex;
+    align-items: center;
+}
+
+.skills-icons i {
+    margin-right: 10px;
+    position: relative;
+}
+
+.skills-icons i[title]:hover::after {
+    content: attr(title);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+}

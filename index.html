@@ -3,52 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-        }
-        .summary {
-            width: 50%;
-        }
-        .summary img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-        }
-        .buttons {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .buttons a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+     <!-- Font Awesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
 </head>
 <body>
     <div class="container">
-        <div class="summary">
-            <img src="Portfolioimg.PNG" alt="Headset Image">
-            <p>Professional Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in nisi ac massa congue consectetur nec sed lorem. Nullam ultricies leo ut elit tristique, in placerat velit accumsan. Nam vulputate quam ac sapien pulvinar vehicula.</p>
+        <div class="left-section">
+            <div class="profile">
+                <img src="portfolio.jpg" alt="Profile Picture">
+                <h1>Sarthak Sahoo</h1>
+                <p>Cloud Data Engineer</p>
+                <p>sarthaksahoo49@gmail.com</p>
+                <p>5713039819</p>
+                <a href="SarthakSahoo_Cloud_DataEngineer_Resume.docx" download Resume>
+                    <button id="btn-download" class="download-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                      </button>                     
+                </a>
+                <br> 
+                <br>
+
+               <div class="social-icons">
+                <a href="https://github.com/sahoos511" target="_blank" class="social-icon">
+                 <i class="fab fa-github"></i>
+                 </a>
+                <a href="https://www.linkedin.com/in/sarthaksahoo511" target="_blank" class="social-icon">
+                 <i class="fab fa-linkedin-square"></i>
+                </a>
+                </div>
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="buttons">
-            <a href="resume.pdf" target="_blank">Resume</a>
-            <a href="https://www.linkedin.com/in/sarthaksahoo511/" target="_blank">LinkedIn</a>
-            <a href="">Projects</a>
+        <div class="right-section">
+            <h2>Summary</h2>
+            <section id="summary" class = "summary-section">
+                
+                <p>Highly skilled Data Engineer with 3+ years of experience in designing and implementing ETL pipelines using Python and Spark. Proficient in cloud services (AWS: S3, Glue, EMR, Lambda | Azure: Data Bricks, Data Factory) and Snowflake. Experienced in automating data architectures with CI/CD pipelines using Jenkins for enhanced performance and reliability.
+
+                </p>
+            </section>
+            <h2>Skills</h2>                  
+                
+            <section id="skills" class = 'skills-section'>
+               
+                <ul>
+                    <li style="margin-bottom: 10px;">Programming Language and Tools</li>
+                    <br>
+                  
+                    <div class="skills-icons">
+                        <i class="fab fa-python" title="Python"></i> 
+                        <span>Spark</span>
+                        <i class="far fa-star" style="color: #e20808; font-size: 40px; transform: rotate(45deg)"></i>
+                        <i class="fas fa-database" title="SQL"></i>
+                        <i class="fab fa-aws" title="AWS"></i>
+                        <i class="fab fa-microsoft" title="Azure"></i>
+                        <i class="fas fa-snowflake" title="Snowflake"></i>
+                        <i class="fab fa-jenkins fa-flip" title="Jenkins"></i>
+                    </div>
+                    
+                    <br> 
+
+                    <li> Collobartion with Cross Functional Team </li>
+                    <br>
+
+                    <div class="icon-list">
+                        <i class="fab fa-jira" style="color: #2460c6; font-size: 40px;"></i>
+                        <i class="fab fa-github" style="color: #161717; font-size: 40px;"></i>
+                        <i class="fas fa-code-branch" style="color: #db3d3d; font-size: 40px;"></i>
+                    </div>
+                    
+                    
+                </ul>
+                
+            </section>
+            <h2>Education</h2>
+            <section id="education" class = 'education-section'>
+               
+                <ul>
+                    <li>Master's in Applied Computer Science - Frostburg State University
+                         <i class="fas fa-graduation-cap" style="color: #000000;"></i>
+                         <img src="fsu.png" alt="Icon Description" style="width: 30px; height: 20px;">
+
+
+                        </li>
+                    <br>
+                    <li>Bachelor's in Computer Science - Virginia Commonwealth University 
+                        <i class="fas fa-graduation-cap" style="color: #000000;"></i>
+                        <img src="vcu.png" alt="Icon Description" style="width: 30px; height: 20px;">
+                    </li>
+                    
+
+                </ul>
+            </section>
+            
+            <section id="experience">
+                <h2 class="experience-heading">Experience</h2>
+                <div class="experience-section">
+                    <h3>Cloud Data Engineer</h3>
+                    <h4>CVS Health</h4>
+                    <p>Designed and implemented ETL pipelines with Glue scripts, Python, Pandas, and Spark (including RDD and DataFrame API) within EMR for data processing and analysis. Loaded data into Snowflake and AWS Redshift for efficient batch processing workflows with SQL. Orchestrated CI/CD pipelines with Jenkins, Git, and AWS CloudWatch, reducing deployment time by 25%, improving error handling, and enhancing overall efficiency by 20%. Leveraged Docker and Kubernetes for containerization within ECS and EKS to ensure seamless deployment and scalability of the ETL process. Collaborated with cross-functional teams to align data strategies with business objectives, improving data-driven decision-making accuracy.</p>
+                </div>
+                <div class="experience-section">
+                    <h3>Data Engineer</h3>
+                    <h4>Performance Food Group</h4>
+                    <p>Engineered and optimized ETL pipelines in Azure Databricks for Snowflake, processing sales, inventory, and consumer data with Python, PySpark, and SQL. Conducted statistical and machine learning analysis using Scikit-learn and Scipy to extract actionable insights. Utilized Matplotlib and Seaborn, and Power BI for data visualization, creating comprehensive reports to empower stakeholders with sales and inventory insights.</p>
+                </div>
+            </section>
+            
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <section id="projects">
+                        <div class="project-card">
+                            <h3>Spotify Song Analysis</h3>
+                            <p>Conducted ETL pipeline processes for Spotify song dataset. Extracted data from S3 using Spark on EMR, transformed data to analyze song attributes, and loaded processed data into Redshift for analytics. Analyzed trends in song attributes such as danceability and energy, explored temporal and seasonal variations in music consumption, investigated song popularity across different platforms and services, identified correlations between song features and chart rankings, and provided valuable insights for stakeholders in the music industry.</p>
+                            <img src="Project1.png" alt="Data Flow Diagram">
+                        </div>
+                        <div class="project-card">
+                            <h3>Twitter Hash Tag Data Analysis</h3>
+                            <p>Extracted live tweet data using the Twitter API.
+                                Utilized streaming data processing frameworks like Apache Kafka for real-time data ingestion.
+                                Performed data analysis and aggregation using Apache Spark Streaming to extract insights from the tweet stream.
+                                Stored processed data in a NoSQL database such as MongoDB for scalability and flexibility in handling unstructured tweet data.
+                                Visualized tweet metrics and trends using D3.js, creating interactive dashboards to display key performance indicators such as tweet volume, popular hashtags, and user engagement..</p>
+                            <img src="Project2.png" alt="Project 2 Image">
+                        </div>
+                    </section>                   
+                    
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-form">
+
+                    <p> <i class="fa fa-envelope" style="font-size:20px"></i>
+                        sarthaksahoo49@gmail.com
+                    </p>
+                    <p> <i class="fa fa-phone" style="font-size:20px"></i>
+                        571-303-9819
+                    </p>
+                    <p> <i class="fab fa-linkedin-square" style="font-size:20px"></i> https://www.linkedin.com/in/sarthaksahoo511/
+                    </p>
+                </div>
+            </section>
+            
         </div>
     </div>
 </body>
