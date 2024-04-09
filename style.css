@@ -301,3 +301,32 @@ nav ul {
 .nav-link:hover {
     background-color: #f0f0f0; /* Change background color on hover */
 }
+
+.icon-list i {
+    position: relative;
+}
+
+.icon-list i::after {
+    content: attr(title); /* Use the 'title' attribute content as the tooltip text */
+    position: absolute;
+    bottom: -20px; /* Adjust as needed to position the tooltip */
+    left: 50%; /* Center the tooltip horizontally */
+    transform: translateX(-50%); /* Center the tooltip horizontally */
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    visibility: hidden; /* Hide the tooltip by default */
+    opacity: 0; /* Start with opacity 0 */
+    transition: visibility 0s, opacity 0.3s; /* Add transition effect */
+}
+
+.icon-list i:hover::after {
+    visibility: visible; /* Show the tooltip when hovering over the icon */
+    opacity: 1; /* Set opacity to fully visible */
+}
+
+
+
+/* This is for the test case */
